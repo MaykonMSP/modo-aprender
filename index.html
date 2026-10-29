@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b101b">
+  <meta name="description" content="Modo Aprender: uma proposta de aprendizagem adaptativa e verificável, criada individualmente para o Desafio Lumina Start. Experimente uma simulação e confira as evidências reais.">
+  <meta property="og:title" content="Modo Aprender — Aprender não é apenas chegar à resposta">
+  <meta property="og:description" content="Uma proposta com evidências reais, agente experimental e demonstração interativa de aprendizagem adaptativa.">
+  <meta property="og:type" content="website">
+  <title>Modo Aprender — Lumina Start</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <a href="#conteudo" class="skip">Ir para o conteúdo</a>
+  <div class="ambient ambient-a" aria-hidden="true"></div><div class="ambient ambient-b" aria-hidden="true"></div>
+  <header class="site-header">
+    <div class="nav-container layout-wrap">
+      <a class="logo" href="#inicio" aria-label="Modo Aprender — início"><span class="logo-mark">✳</span><span>modo<span class="logo-muted">/</span>aprender</span></a>
+      <nav class="desktop-nav" aria-label="Navegação principal">
+        <a href="#experiencia">Experimente</a><a href="#evidencias">Evidências</a><a href="#funcionamento">Como funciona</a><a href="#fontes">Fontes</a>
+      </nav>
+      <a class="nav-button" href="#experiencia">Testar agora <span aria-hidden="true">↗</span></a>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <section class="hero layout-wrap" id="inicio">
+      <div class="hero-content">
+        <div class="eyebrow"><span class="pulse-dot"></span> DESAFIO LUMINA START <span class="dot-sep">·</span> PROJETO INDIVIDUAL</div>
+        <h1>Aprender não é apenas <em>chegar à resposta.</em></h1>
+        <p class="hero-lead">E se a inteligência artificial não apenas ajudasse a concluir uma tarefa, mas também verificasse o que você consegue fazer <strong>sem ajuda</strong>?</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#experiencia">Experimentar o conceito <span aria-hidden="true">↗</span></a>
+          <a class="button button-ghost" href="#evidencias">Ver resultados reais <span aria-hidden="true">→</span></a>
+        </div>
+        <div class="hero-fine"><span class="person-avatar">MP</span><span>Pesquisa e protótipo desenvolvidos individualmente por <strong>Maykon Pereira</strong>, com apoio de IA.</span></div>
+      </div>
+      <div class="hero-visual" aria-label="Ilustração do ciclo de aprendizagem">
+        <div class="hero-window">
+          <div class="window-top"><span class="window-lights"><i></i><i></i><i></i></span><span>SESSÃO DE APRENDIZAGEM</span><span class="top-live"><span></span> exemplo</span></div>
+          <div class="window-body">
+            <div class="micro-tag">CICLO DE APRENDIZAGEM</div>
+            <div class="flow-step"><div class="flow-index">01</div><div><b>Primeira tentativa</b><p>O estudante tenta resolver</p></div><span class="flow-status status-neutral">Iniciada</span></div>
+            <div class="flow-connector"></div>
+            <div class="flow-step"><div class="flow-index">02</div><div><b>Feedback adaptativo</b><p>Correção específica, sem julgar</p></div><span class="flow-status status-hint">Dica</span></div>
+            <div class="flow-connector"></div>
+            <div class="flow-step flow-featured"><div class="flow-index">03</div><div><b>Nova tentativa independente</b><p>Um problema diferente, sem dicas</p></div><span class="flow-status status-good">Verificar</span></div>
+            <div class="hero-insight"><span class="insight-spark">✳</span><span><strong>O objetivo não é só acertar.</strong><br>É construir autonomia no processo.</span></div>
+          </div>
+        </div>
+        <span class="floating-label floating-one">pensar → tentar → aprender</span>
+        <span class="floating-label floating-two">não é só a resposta ✳</span>
+      </div>
+    </section>
+
+    <section class="summary-band">
+      <div class="layout-wrap summary-grid">
+        <div class="metric"><strong>01</strong><span>participante nos testes de aprendizagem</span></div>
+        <div class="metric"><strong>03</strong><span>cenários do agente experimental</span></div>
+        <div class="metric"><strong>01</strong><span>agente real configurado na Lumina</span></div>
+        <div class="metric-note"><span>ℹ</span><span>Investigação exploratória, sem alegação de eficácia comprovada.</span></div>
+      </div>
+    </section>
+
+    <section class="section layout-wrap" id="experiencia">
+      <div class="section-header"><div><div class="section-index">01 / EXPERIMENTE</div><h2>Uma resposta pronta<br>ou um caminho para aprender?</h2></div><p>Alterne entre as duas experiências. O exemplo é uma <strong>simulação local interativa</strong> da proposta, não uma conversa com uma IA em tempo real.</p></div>
+      <div class="lab-shell">
+        <div class="lab-top"><div class="lab-brand"><span class="tiny-brand">✳</span><div><strong>Laboratório Modo Aprender</strong><span>Exercício de JavaScript · Arrays</span></div></div><div class="lab-indicator"><span class="status-light"></span> Demonstração simulada</div></div>
+        <div class="lab-mode"><span>Como você quer interagir?</span><div class="mode-switch" role="group" aria-label="Modo de interação"><button class="mode-btn" id="mode-direct" type="button" aria-pressed="false">Resposta direta</button><button class="mode-btn is-active" id="mode-learn" type="button" aria-pressed="true">✳ Modo Aprender</button></div></div>
+        <div class="lab-grid">
+          <div class="exercise-column">
+            <div class="exercise-label"><span class="pill pill-muted">EXERCÍCIO 01</span><span class="easy-label">Iniciante</span></div>
+            <h3>Selecionando notas com <code>filter()</code></h3>
+            <p class="exercise-desc">Dado o array, crie outro com as notas maiores ou iguais a <strong>70</strong>.</p>
+            <div class="code-view"><div class="code-head"><span class="code-dots">● ● ●</span><span>exercicio.js</span><span>JS</span></div><pre><code><span class="tok-key">const</span> notas = [<span class="tok-num">55</span>, <span class="tok-num">70</span>, <span class="tok-num">82</span>, <span class="tok-num">64</span>];</code></pre></div>
+            <div class="tipline"><span>⌁</span> <span><strong>Objetivo:</strong> selecionar, não transformar os valores.</span></div>
+            <div class="why-it-matters"><span>↗</span><div><strong>O que estamos observando?</strong><p>Se a pessoa entende a condição e consegue aplicá-la — não apenas copiar a solução.</p></div></div>
+          </div>
+          <div class="interaction-column">
+            <div id="direct-panel" hidden>
+              <div class="assistant-line"><span class="assistant-avatar">✳</span><div><div class="speaker">Assistente · resposta direta</div><p>Para manter apenas as notas maiores ou iguais a 70, use <code>filter()</code> com uma comparação:</p></div></div>
+              <div class="code-view answer-code"><div class="code-head"><span class="code-dots">● ● ●</span><span>solucao.js</span><span>JS</span></div><pre><code><span class="tok-key">const</span> aprovadas = notas.<span class="tok-method">filter</span>(nota => nota <span class="tok-op">&gt;=</span> <span class="tok-num">70</span>);
+<span class="tok-comment">// [70, 82]</span></code></pre></div>
+              <p class="direct-foot">Esta opção resolve imediatamente. É útil quando a intenção é obter uma informação rápida.</p>
+              <button class="button button-secondary" type="button" id="direct-sources">Conferir a referência técnica <span>↗</span></button>
+            </div>
+            <div id="learn-panel">
+              <div class="step-progress"><span id="stage-1" class="stage active"><b>1</b> Corrigir</span><i></i><span id="stage-2" class="stage"><b>2</b> Aplicar sozinho</span></div>
+              <div id="lesson-message" class="assistant-line"><span class="assistant-avatar">✳</span><div><div class="speaker">Modo Aprender · etapa orientada</div><p>O <code>filter()</code> é uma boa escolha. Veja esta tentativa e descubra qual parte não está funcionando:</p></div></div>
+              <div id="task-one"><label for="code-editor" class="code-label">Sua tentativa <span>Edite a condição</span></label><div class="editor-wrap"><div class="editor-header"><span class="editor-dots">● ● ●</span><span>minha-tentativa.js</span></div><textarea id="code-editor" spellcheck="false" aria-describedby="editor-note">const aprovadas = notas.filter(nota => nota => 70);</textarea></div><div class="editor-note" id="editor-note">A simulação analisa uma condição simples com função de seta; não executa o código digitado.</div><div class="hint-area" id="hint-area" aria-live="polite"></div><div class="lab-actions"><button class="button button-primary" type="button" id="check-one">Verificar minha tentativa <span>→</span></button><button class="button button-subtle" type="button" id="hint-one">Preciso de uma dica</button></div></div>
+              <div id="task-two" hidden><p class="transfer-prompt">Muito bem. Agora um <strong>novo problema</strong>: no array <code>[18, 25, 30, 22]</code>, selecione só as temperaturas <strong>menores que 25</strong>, sem incluir o 25.</p><label for="transfer-editor" class="code-label">Nova tentativa <span>Sem dicas, se possível</span></label><div class="editor-wrap"><div class="editor-header"><span class="editor-dots">● ● ●</span><span>transferencia.js</span></div><textarea id="transfer-editor" spellcheck="false">const temperaturas = [18, 25, 30, 22];
+const menoresQue25 = temperaturas.filter(t => );</textarea></div><div class="editor-note">Use uma função de seta no <code>filter()</code>. A checagem é didática e reconhece padrões simples.</div><div class="hint-area" id="transfer-feedback" aria-live="polite"></div><div class="lab-actions"><button class="button button-primary" type="button" id="check-two">Verificar sem ajuda <span>→</span></button><button class="button button-subtle" type="button" id="hint-two">Pedir uma dica</button></div></div>
+              <div id="task-complete" class="complete-view" hidden><div class="complete-icon">✓</div><div class="complete-eyebrow">PRÁTICA CONCLUÍDA</div><h3 id="complete-title">Aplicação independente observada</h3><p id="complete-text">Você resolveu um exercício novo sem usar pistas durante esta tentativa.</p><div class="complete-summary"><span>✓ Exercício orientado</span><span id="completion-status">✓ Nova aplicação sem ajuda</span></div><button class="button button-secondary" type="button" id="restart-lab">Recomeçar demonstração <span>↺</span></button></div>
+            </div>
+            <div class="source-mini"><span>⌁</span><span>Referência técnica: <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/filter" target="_blank" rel="noopener noreferrer">MDN — Array.filter() ↗</a></span><button type="button" id="open-source-mini">Conferir fontes</button></div>
+          </div>
+        </div>
+      </div>
+      <p class="under-lab-note"><span>ⓘ</span> Esta demonstração não faz chamadas à Lumina, não possui backend, não armazena respostas e não mede aprendizagem real. Ela ilustra o fluxo proposto; o agente testado na plataforma aparece nas evidências abaixo.</p>
+    </section>
+
+    <section class="section evidence-section" id="evidencias"><div class="layout-wrap">
+      <div class="section-header"><div><div class="section-index">02 / EVIDÊNCIAS</div><h2>O que realmente aconteceu<br>nos testes?</h2></div><p>Registros reais fornecidos durante a investigação. A comparação é exploratória: apenas um participante e sem controle experimental suficiente para alegar superioridade.</p></div>
+      <div class="evidence-feature">
+        <div class="evidence-copy"><span class="pill pill-contrast">O PROBLEMA OBSERVADO</span><h3>Entender a explicação não garantiu acertar a próxima implementação.</h3><p>Depois de uma atividade assistida sobre <code>filter()</code>, a primeira tentativa independente ainda confundiu o operador que cria funções (<code>=&gt;</code>) com o operador de comparação (<code>&gt;=</code>).</p><div class="observed-code"><span>TRANSCRIÇÃO DO PÓS-TESTE (P04-B)</span><code>pontuacoes.filter(pontuacoes =&gt; pontuacoes =&gt; 70)</code></div><p class="evidence-caveat">Essa transcrição veio da resposta do participante neste estudo; não é uma captura de uma conversa na Lumina.</p></div>
+        <div class="evidence-quote"><span class="quote-symbol">“</span><p>Eu conseguia explicar para que servia o método, mas na hora de colocar isso em prática ainda confundia alguns operadores.</p><div>— Relato do participante, após os testes</div></div>
+      </div>
+      <div class="evidence-cards">
+        <article class="evidence-card"><div class="evidence-img"><img src="assets/ag03-diagnostico.webp" alt="Captura real da Lumina: o agente Modo Aprender explica o erro entre duas funções com seta na condição de filter" loading="lazy"><button type="button" class="zoom-btn" data-image="assets/ag03-diagnostico.webp" data-caption="AG03 — Diagnóstico de erro de operador realizado pelo agente na Lumina">Ampliar imagem ↗</button></div><div class="evidence-body"><div class="card-topline"><span>AG03 · DIAGNÓSTICO</span><span class="evidence-dot"></span></div><h3>Uma correção específica</h3><p>O agente identificou o que estava correto e apontou precisamente o erro na condição.</p></div></article>
+        <article class="evidence-card"><div class="evidence-img"><img src="assets/ag03-transferencia.webp" alt="Captura real da Lumina: tentativa de código com filter corretamente resolvida em um novo exercício sem dicas naquela tentativa" loading="lazy"><button type="button" class="zoom-btn" data-image="assets/ag03-transferencia.webp" data-caption="AG03 — Aplicação correta em novo exercício, sem dicas durante aquela tentativa">Ampliar imagem ↗</button></div><div class="evidence-body"><div class="card-topline"><span>AG03 · TRANSFERÊNCIA</span><span class="evidence-dot evidence-dot-green"></span></div><h3>Uma nova tentativa correta</h3><p>Após práticas adicionais, houve resolução correta de um problema novo sem dicas naquela tentativa.</p></div></article>
+        <article class="evidence-card"><div class="evidence-img"><img src="assets/ag02-objetividade.webp" alt="Captura real da Lumina: resposta breve do agente a um pedido urgente para uma entrevista de estágio" loading="lazy"><button type="button" class="zoom-btn" data-image="assets/ag02-objetividade.webp" data-caption="AG02 — Resposta direta a solicitação urgente de entrevista">Ampliar imagem ↗</button></div><div class="evidence-body"><div class="card-topline"><span>AG02 · OBJETIVIDADE</span><span class="evidence-dot evidence-dot-blue"></span></div><h3>Nem tudo precisa virar aula</h3><p>O modo educativo também respondeu diretamente quando o pedido exigia rapidez.</p></div></article>
+      </div>
+      <div class="evidence-disclaimer"><span>✳</span><div><b>O que estes resultados permitem dizer?</b><p>O protótipo apresentou comportamentos previstos nas instruções. Não demonstramos causalidade exclusiva, retenção de longo prazo ou eficácia superior à experiência convencional.</p></div></div>
+    </div></section>
+
+    <section class="section layout-wrap" id="funcionamento">
+      <div class="section-header"><div><div class="section-index">03 / PROPOSTA</div><h2>Um modo que se adapta<br>ao que você precisa.</h2></div><p>O agente experimental mostrou parte do funcionamento possível. A integração nativa e o acompanhamento ao longo do tempo são propostas futuras.</p></div>
+      <div class="pillars-grid">
+        <article class="pillar"><span class="pillar-n">01</span><span class="pillar-icon">◈</span><h3>Orientar</h3><p>Reconhecer intenção, adequar explicações e oferecer pistas na medida certa.</p><span class="pillar-tag">Comportamento observado</span></article>
+        <article class="pillar"><span class="pillar-n">02</span><span class="pillar-icon">◎</span><h3>Verificar</h3><p>Distinguir resolução com ajuda de uma nova aplicação sem dicas.</p><span class="pillar-tag">Comportamento observado</span></article>
+        <article class="pillar"><span class="pillar-n">03</span><span class="pillar-icon">▥</span><h3>Acompanhar</h3><p>Registrar dificuldades, progresso e revisões ao longo de diferentes sessões.</p><span class="pillar-tag pillar-future">Evolução futura</span></article>
+        <article class="pillar"><span class="pillar-n">04</span><span class="pillar-icon">⌕</span><h3>Conferir</h3><p>Relacionar informações a fontes verificáveis e explicitar o que não foi consultado.</p><span class="pillar-tag pillar-future">Evolução futura</span></article>
+      </div>
+    </section>
+
+    <section class="section sources-section" id="fontes"><div class="layout-wrap sources-layout"><div><div class="section-index">04 / CONFIABILIDADE</div><h2>Aprender também é saber <em>de onde veio</em> uma informação.</h2><p>A proposta prevê citações discretas e um painel para distinguir fontes realmente consultadas, materiais para leitura complementar e explicações baseadas no conhecimento do modelo.</p><button class="button button-outline" id="open-source-main" type="button">Explorar painel de fontes <span>↗</span></button></div><div class="source-panel-preview"><div class="preview-head"><span>⌁ PAINEL DE VERIFICAÇÃO</span><span>▤</span></div><div class="preview-entry"><span class="source-type type-a">01</span><div><b>Fonte consultada</b><p>Documento usado para fundamentar uma informação.</p></div><span>↗</span></div><div class="preview-entry"><span class="source-type type-b">02</span><div><b>Leitura recomendada</b><p>Material sugerido, não necessariamente consultado.</p></div><span>↗</span></div><div class="preview-entry"><span class="source-type type-c">03</span><div><b>Conhecimento do modelo</b><p>Sem documento original de treinamento rastreável.</p></div><span>↗</span></div><div class="preview-bottom">Interface conceitual · não implementada no agente V1</div></div></div></section>
+
+    <section class="section layout-wrap about" id="sobre"><div class="section-index">05 / SOBRE O PROJETO</div><div class="about-flex"><div><h2>Uma investigação individual.<br><em>Com apoio de IA, não substituída por ela.</em></h2><p>Comecei com uma pergunta: a IA ajuda a aprender ou apenas facilita a conclusão de tarefas? Estruturei os testes com apoio do ChatGPT, utilizei a Lumina como ferramenta investigada e criei um agente para explorar a proposta na prática.</p><p>Os resultados são exploratórios. A próxima etapa seria testar a experiência com mais jovens, comparar o desempenho em problemas inéditos e avaliar a retenção ao longo do tempo.</p></div><div class="about-card"><div class="about-avatar">MP</div><div><b>Maykon Pereira</b><span>Autor, pesquisador e participante</span></div><div class="about-line"></div><p>Projeto individual para o Desafio Lumina Start, no contexto do Geração Caldeira.</p><a href="https://github.com/MaykonMSP" target="_blank" rel="noopener noreferrer">GitHub do autor ↗</a></div></div></section>
+  </main>
+  <footer class="footer"><div class="layout-wrap footer-row"><div><span class="footer-logo">✳ modo/aprender</span><p>Estudo independente · Demonstração conceitual · Não é um produto oficial da Lumina.</p></div><a href="#inicio">Voltar ao início ↑</a></div></footer>
+
+  <dialog id="source-dialog" class="dialog" aria-labelledby="source-dialog-title"><div class="dialog-shell"><div class="dialog-top"><div><div class="section-index">TRANSPARÊNCIA</div><h2 id="source-dialog-title">Conferir fontes</h2></div><button type="button" class="icon-close" id="close-sources" aria-label="Fechar painel de fontes">×</button></div><p class="dialog-intro">Este painel demonstra como diferenciar a origem de informações. As referências abaixo dizem respeito à <strong>preparação deste site</strong>, não a consultas realizadas em tempo real pelo agente da Lumina.</p><div class="source-tabbar" role="tablist" aria-label="Categorias de proveniência"><button type="button" role="tab" id="tab-consultada" aria-selected="true" aria-controls="panel-consultada" class="selected">Consultada</button><button type="button" role="tab" id="tab-recomendada" aria-selected="false" aria-controls="panel-recomendada">Leitura indicada</button><button type="button" role="tab" id="tab-modelo" aria-selected="false" aria-controls="panel-modelo">Conhecimento do modelo</button></div><div id="panel-consultada" class="source-tab-content" role="tabpanel" aria-labelledby="tab-consultada"><div class="source-status status-verified">● Consulta verificada na preparação do site</div><h3>MDN Web Docs · Array.prototype.filter()</h3><p>Documentação técnica utilizada para conferir a descrição do método <code>filter()</code> apresentada no exemplo.</p><a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/filter" target="_blank" rel="noopener noreferrer">Abrir documento original ↗</a><p class="source-context">Não é uma referência recuperada pela Lumina durante as conversas do experimento.</p></div><div id="panel-recomendada" class="source-tab-content" role="tabpanel" aria-labelledby="tab-recomendada" hidden><div class="source-status status-reading">● Recomendação de aprofundamento</div><h3>MDN Web Docs · Array.prototype.map()</h3><p>Material útil para contrastar transformação de elementos com seleção por condição. Não foi uma fonte necessária à geração de respostas nesta simulação.</p><a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/map" target="_blank" rel="noopener noreferrer">Abrir material recomendado ↗</a></div><div id="panel-modelo" class="source-tab-content" role="tabpanel" aria-labelledby="tab-modelo" hidden><div class="source-status status-model">● Sem fonte original identificável</div><h3>Explicações baseadas no conhecimento do modelo</h3><p>Modelos de linguagem não permitem identificar automaticamente qual documento específico de treinamento originou cada frase. Nesse caso, uma interface responsável deve declarar a limitação em vez de inventar referências.</p><p class="source-context">Na demonstração deste site, respostas e feedbacks são regras previamente escritas em JavaScript; não são gerados por modelo de IA.</p></div><div class="dialog-bottom"><span>Protótipo visual do 4º pilar</span><button type="button" class="button button-secondary" id="close-sources-bottom">Fechar painel</button></div></div></dialog>
+  <dialog id="image-dialog" class="image-dialog" aria-label="Captura de tela ampliada"><div class="image-dialog-inner"><button type="button" class="icon-close image-close" id="close-image" aria-label="Fechar imagem">×</button><img id="expanded-image" alt="Captura ampliada do teste"><p id="expanded-caption"></p></div></dialog>
+</body>
+</html>
